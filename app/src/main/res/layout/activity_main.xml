@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#323232"
+    android:orientation="vertical"
+    >
+
+<TextView
+    android:id="@+id/TV1"
+    android:text="Type and Run"
+    android:textSize="20dp"
+    style="@style/TextView"
+    />
+    <TextView
+        android:id="@+id/TV2"
+        android:text="Make:"
+        style="@style/TextView"
+        />
+    <EditText
+        android:id="@+id/make"
+        style="@style/EditText"
+        />
+    <TextView
+        android:id="@+id/TV3"
+        android:text="Year:"
+        style="@style/TextView"
+        />
+    <EditText
+        android:id="@+id/year"
+        style="@style/EditText"
+        android:inputType="number"
+        />
+    <TextView
+    android:id="@+id/TV4"
+    android:text="Color:"
+    style="@style/TextView"
+    />
+    <EditText
+        android:id="@+id/color"
+        style="@style/EditText"
+        />
+    <TextView
+    android:id="@+id/TV5"
+    android:text="Purchase Price(£):"
+        style="@style/TextView"
+    />
+    <EditText
+        android:id="@+id/price"
+        style="@style/EditText"
+        android:inputType="number"
+        />
+    <TextView
+    android:id="@+id/TV6"
+    android:text="Engine size(Liter):"
+        style="@style/TextView"
+    />
+    <EditText
+        android:id="@+id/size"
+        style="@style/EditText"
+        android:inputType="number"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <Button
+        android:id="@+id/cc"
+        style="@style/Button"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="27dp"
+        android:text="Create car" />
+
+    <Button
+        android:id="@+id/cd"
+        style="@style/Button"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/cc"
+        android:text="Create Diesel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ans"
+                style="@style/EditText"
+                android:inputType="textMultiLine"
+                android:editable="false"
+                />
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
